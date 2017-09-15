@@ -19,6 +19,18 @@ public class ProductModel implements Serializable{
     public ProductModel() {
     }
 
+    public ProductModel(int product_id, int product_price, int product_discount, String product_name, String product_rating, String product_image, String product_tag) {
+        this.product_id = product_id;
+        this.product_price = product_price;
+        this.product_discount = product_discount;
+        this.product_name = product_name;
+        this.product_rating = product_rating;
+        this.product_image = product_image;
+        this.product_tag = product_tag;
+    }
+    
+    
+
     public int getProduct_id() {
         return product_id;
     }
@@ -74,6 +86,7 @@ public class ProductModel implements Serializable{
     public void setProduct_tag(String product_tag) {
         this.product_tag = product_tag;
     }
+    
     
     
 
